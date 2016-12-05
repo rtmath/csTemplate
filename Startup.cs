@@ -14,6 +14,10 @@ namespace EnterNamespaceHere //replace with your desired namespace
       app.UseOwin(x => x.UseNancy());
     }
   }
+  public static class DBConfiguration
+  {
+      public static string ConnectionString = "Data Source=(localdb)\\mssqllocaldb;Initial Catalog=XXXX;Integrated Security=SSPI;";
+  }
   public class CustomRootPathProvider : IRootPathProvider
   {
     public string GetRootPath()
